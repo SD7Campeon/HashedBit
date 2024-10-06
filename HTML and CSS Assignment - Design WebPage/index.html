@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage Design</title>
+    <meta name="description" content="A demo webpage with modern design elements and layout">
+    <title>HTML and CSS Assignment - Design WebPage</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
+    <header class="scroll-animation fade-in">
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <img src="https://via.placeholder.com/100x50" alt="Company Logo" loading="lazy">
         </div>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
+        <nav class="social-links" aria-label="Social Media Links">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+        </nav>
     </header>
 
-    <nav class="menu-bar">
+    <nav class="menu-bar scroll-animation slide-in" aria-label="Main Navigation">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Services</a>
@@ -26,32 +30,43 @@
     </nav>
 
     <div class="container">
-        <aside class="sidebar">
-            <h3>Custom Data</h3>
-            <p>This is some custom data for the sidebar.</p>
+        <aside class="sidebar scroll-animation slide-in" aria-labelledby="sidebar-title">
+            <h3 id="sidebar-title">Custom Data</h3>
+            <p>This is some custom data for the sidebar. You can place more dynamic content here, like news or updates.</p>
         </aside>
 
         <main>
-            <section class="content-box">
-                <h2>Title 1</h2>
-                <img src="image1.jpg" alt="Image 1">
-                <p>Description of box 1.</p>
-            </section>
-            <section class="content-box">
-                <h2>Title 2</h2>
-                <img src="image2.jpg" alt="Image 2">
-                <p>Description of box 2.</p>
-            </section>
-            <section class="content-box">
-                <h2>Title 3</h2>
-                <img src="image3.jpg" alt="Image 3">
-                <p>Description of box 3.</p>
+            <section class="content-grid">
+                <article class="content-box scroll-animation fade-in-up">
+                    <h2>Title 1</h2>
+                    <figure>
+                        <img src="https://via.placeholder.com/300" alt="Sample image 1" loading="lazy">
+                        <figcaption>Description of box 1.</figcaption>
+                    </figure>
+                </article>
+                <article class="content-box scroll-animation fade-in-up">
+                    <h2>Title 2</h2>
+                    <figure>
+                        <img src="https://via.placeholder.com/300" alt="Sample image 2" loading="lazy">
+                        <figcaption>Description of box 2.</figcaption>
+                    </figure>
+                </article>
+                <article class="content-box scroll-animation fade-in-up">
+                    <h2>Title 3</h2>
+                    <figure>
+                        <img src="https://via.placeholder.com/300" alt="Sample image 3" loading="lazy">
+                        <figcaption>Description of box 3.</figcaption>
+                    </figure>
+                </article>
             </section>
         </main>
     </div>
 
-    <footer>
-        <p>Sample Footer Text</p>
+    <footer class="scroll-animation fade-in">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script> <!-- JavaScript for scroll animations -->
 </body>
+
 </html>
