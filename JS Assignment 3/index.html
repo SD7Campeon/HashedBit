@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Mathematical Functions</h1>
+        </header>
+
+        <div class="assignment-section">
+            <h2>Q1: Filter States</h2>
+            <input type="text" id="statesInput" value="Andhra Pradesh, Bihar, Delhi, Uttar Pradesh, Goa" />
+            <button onclick="filterStates()">Submit</button>
+            <button onclick="resetInput('statesInput', 'outputQ1')">Reset</button>
+            <div id="outputQ1" class="output"></div>
+            <button onclick="copyToClipboard('outputQ1')">Copy</button>
+            <button onclick="downloadResult('outputQ1')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q2: Reverse the Sentence</h2>
+            <input type="text" id="sentenceInput" value="I love my India" />
+            <button onclick="reverseSentence()">Submit</button>
+            <button onclick="resetInput('sentenceInput', 'outputQ2')">Reset</button>
+            <div id="outputQ2" class="output"></div>
+            <button onclick="copyToClipboard('outputQ2')">Copy</button>
+            <button onclick="downloadResult('outputQ2')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q3: Modify String</h2>
+            <input type="text" id="modifyStringInput" value="INDIA" />
+            <button onclick="modifyString()">Submit</button>
+            <button onclick="resetInput('modifyStringInput', 'outputQ3')">Reset</button>
+            <div id="outputQ3" class="output"></div>
+            <button onclick="copyToClipboard('outputQ3')">Copy</button>
+            <button onclick="downloadResult('outputQ3')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q4: Count Vowels and Consonants</h2>
+            <input type="text" id="countStringInput" value="JavaScript is an amazing programming language!" />
+            <button onclick="countVowelsConsonants()">Submit</button>
+            <button onclick="resetInput('countStringInput', 'outputQ4')">Reset</button>
+            <div id="outputQ4" class="output"></div>
+            <button onclick="copyToClipboard('outputQ4')">Copy</button>
+            <button onclick="downloadResult('outputQ4')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q5: Replace Wrong Word</h2>
+            <input type="text" id="replaceStringInput" value="I love my country" />
+            <input type="text" id="wrongWordInput" value="country" />
+            <input type="text" id="correctWordInput" value="India" />
+            <button onclick="replaceWord()">Submit</button>
+            <button onclick="resetInput('replaceStringInput', 'outputQ5')">Reset</button>
+            <div id="outputQ5" class="output"></div>
+            <button onclick="copyToClipboard('outputQ5')">Copy</button>
+            <button onclick="downloadResult('outputQ5')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q6: Filter Numbers Greater than 5</h2>
+            <input type="text" id="numbersInput" value="1,2,3,9,10,7,5,4,3" />
+            <button onclick="filterNumbers()">Submit</button>
+            <button onclick="resetInput('numbersInput', 'outputQ6')">Reset</button>
+            <div id="outputQ6" class="output"></div>
+            <button onclick="copyToClipboard('outputQ6')">Copy</button>
+            <button onclick="downloadResult('outputQ6')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q7: Calculate Student Averages</h2>
+            <textarea id="studentScoresInput" placeholder='Enter student scores in JSON format' 
+                      rows="5" 
+                      value='[{"name": "Ram", "scores": [80, 70, 60]}, {"name": "Mohan", "scores": [80, 70, 90]}, {"name": "Sai", "scores": [60, 70, 80]}, {"name": "Hemang", "scores": [90, 90, 80, 80]}]'></textarea>
+            <button onclick="calculateAverages()">Submit</button>
+            <button onclick="resetInput('studentScoresInput', 'outputQ7')">Reset</button>
+            <div id="outputQ7" class="output"></div>
+            <button onclick="copyToClipboard('outputQ7')">Copy</button>
+            <button onclick="downloadResult('outputQ7')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q8: Repeated Sum of Digits</h2>
+            <input type="number" id="digitInput" value="456" />
+            <button onclick="repeatedSumDigits()">Submit</button>
+            <button onclick="resetInput('digitInput', 'outputQ8')">Reset</button>
+            <div id="outputQ8" class="output"></div>
+            <button onclick="copyToClipboard('outputQ8')">Copy</button>
+            <button onclick="downloadResult('outputQ8')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q9: Count Words in Paragraph</h2>
+            <input type="text" id="paragraphInput" value="This is a sample paragraph with words." />
+            <button onclick="countWords()">Submit</button>
+            <button onclick="resetInput('paragraphInput', 'outputQ9')">Reset</button>
+            <div id="outputQ9" class="output"></div>
+            <button onclick="copyToClipboard('outputQ9')">Copy</button>
+            <button onclick="downloadResult('outputQ9')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q10: Reverse a String</h2>
+            <input type="text" id="reverseStringInput" value="Hello" />
+            <button onclick="reverseString()">Submit</button>
+            <button onclick="resetInput('reverseStringInput', 'outputQ10')">Reset</button>
+            <div id="outputQ10" class="output"></div>
+            <button onclick="copyToClipboard('outputQ10')">Copy</button>
+            <button onclick="downloadResult('outputQ10')">Download</button>
+        </div>
+
+        <div class="assignment-section">
+            <h2>Q11: Calculate Average of Subjects</h2>
+            <textarea id="subjectScoresInput" placeholder='Enter student subject scores in JSON format'
+                      rows="5" 
+                      value='{"student1": {"subject1": 44, "subject2": 56, "subject3": 87, "subject4": 97, "subject5": 37}, "student2": {"subject1": 44, "subject2": 56, "subject3": 87, "subject4": 97, "subject5": 37}, "student3": {"subject1": 44, "subject2": 56, "subject3": 87, "subject4": 97, "subject5": 37}}'></textarea>
+            <button onclick="calculateSubjectAverages()">Submit</button>
+            <button onclick="resetInput('subjectScoresInput', 'outputQ11')">Reset</button>
+            <div id="outputQ11" class="output"></div>
+            <button onclick="copyToClipboard('outputQ11')">Copy</button>
+            <button onclick="downloadResult('outputQ11')">Download</button>
+        </div>
+
+        <button onclick="resetAll()">Reset All</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
