@@ -1,0 +1,18 @@
+<!-- Task Statement
+
+You have a document and that has one paragraph that is important for some of your audience but useless for the rest. You want to ensure that your users get to choose if they want to hide or see the paragraph.
+
+There is a button that, on click, toggles the visibility of the paragraph <p> with id as useless-paragraph.
+
+That means, if the paragraph is visible, button click should hide it and if it is not visible, the button click should show it.
+
+The HTML is already provided to you. You only need to write the JS code.
+ -->
+
+
+
+<h1>I am a headline made with HTML</h1>
+<br />
+<p id="useless-paragraph">Useless paragraph.</p>
+<br />
+<button onclick="toggleVisibility()">Toggle Button</button>
