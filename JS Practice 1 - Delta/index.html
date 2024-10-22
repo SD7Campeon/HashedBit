@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array and Object Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Array and Object Operations</h1>
+
+        <!-- Section 1: Fruit Operations -->
+        <div class="section">
+            <h2>Fruit Operations</h2>
+            <div class="input-container">
+                <input type="text" id="arrayInput" placeholder="Enter comma-separated fruits (e.g., Apple,Banana)">
+            </div>
+            <div class="section-buttons">
+                <button class="animate-btn" onclick="showSecondFruit()">Show Second Fruit</button>
+            </div>
+            <div class="input-container">
+                <input type="text" id="newFruitInput" placeholder="Enter fruit to add (e.g., Orange)">
+                <button class="animate-btn" onclick="addElement()">Add Element</button>
+            </div>
+            <div class="input-container">
+                <input type="text" id="removeFruitInput" placeholder="Enter fruit to remove (e.g., Banana)">
+                <button class="animate-btn" onclick="removeElement()">Remove Element</button>
+            </div>
+            <div id="fruitOutput" class="output"></div>
+        </div>
+
+        <!-- Section 2: Number Array Operations -->
+        <div class="section">
+            <h2>Number Array Operations</h2>
+            <div class="input-container">
+                <input type="text" id="numbersInput" placeholder="Enter comma-separated numbers (e.g., 1,2,3)">
+            </div>
+            <div class="section-buttons">
+                <button class="animate-btn" onclick="displaySquaredNumbers()">Square Numbers</button>
+                <button class="animate-btn" onclick="showOddNumbers()">Filter Odd Numbers</button>
+            </div>
+            <div id="numberOutput" class="output"></div>
+        </div>
+
+        <!-- Section 3: Object Operations -->
+        <div class="section">
+            <h2>Object Operations</h2>
+            <div class="input-container">
+                <input type="text" id="personInput" placeholder="Enter name, age, occupation (e.g., John,30,Developer)">
+            </div>
+            <div class="section-buttons">
+                <button class="animate-btn" onclick="greet()">Greet Person</button>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="rectangleInput" placeholder="Enter width and height (e.g., 10,5)">
+            </div>
+            <div class="section-buttons">
+                <button class="animate-btn" onclick="showArea()">Calculate Area</button>
+                <button class="animate-btn" onclick="showObjectKeys()">Show Object Keys</button>
+                <button class="animate-btn" onclick="mergeTwoObjects()">Merge Objects</button>
+            </div>
+            <div id="objectOutput" class="output"></div>
+        </div>
+
+        <!-- Section 4: Sum Calculation -->
+        <div class="section">
+            <h2>Sum Calculation</h2>
+            <div class="input-container">
+                <input type="text" id="numbersInputSum" placeholder="Enter comma-separated numbers (e.g., 1,2,3)">
+            </div>
+            <div class="section-buttons">
+                <button class="animate-btn" onclick="showSum()">Calculate Sum</button>
+            </div>
+            <div id="sumOutput" class="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
